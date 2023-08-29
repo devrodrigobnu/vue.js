@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="entra21"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-08-17 10:29:38 "/>
+        <attribute name="created" value="ZW50cmEyMTtERVNLVE9QLTBOTjM4UEw7MjAyMy0wOC0xNzsiMDk6MzY6NTMgIjsyODkx"/>
+        <attribute name="edited" value="ZW50cmEyMTtERVNLVE9QLTBOTjM4UEw7MjAyMy0wOC0xNzsiMTA6Mjk6MzggIjsyOzI5OTc="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="num, resto" type="Integer" array="False" size=""/>
+            <output expression="&quot;Digite um n&#250;mero:&quot;" newline="True"/>
+            <input variable="num"/>
+            <assign variable="resto" expression="num % 2"/>
+            <if expression="resto == 0">
+                <then>
+                    <output expression="&quot;O numero &#233; par&quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;O numero &#233; impar&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="entra21"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-08-17 10:46:53 "/>
+        <attribute name="created" value="ZW50cmEyMTtERVNLVE9QLTBOTjM4UEw7MjAyMy0wOC0xNzsiMDk6MzY6NTMgIjsyODkx"/>
+        <attribute name="edited" value="ZW50cmEyMTtERVNLVE9QLTBOTjM4UEw7MjAyMy0wOC0xNzsiMTA6NDY6NTMgIjszOzI5OTQ="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="resultado, num" type="Integer" array="False" size=""/>
+            <output expression="&quot;Digite um n&#250;mero para trazer sua tabuada&quot;" newline="True"/>
+            <input variable="num"/>
+            <output expression="num &amp; &quot; x &quot; &amp; &quot;1 = &quot; &amp; (num*1)" newline="True"/>
+            <output expression="num &amp; &quot; x &quot; &amp; &quot;2 = &quot; &amp; (num*2)" newline="True"/>
+            <output expression="num &amp; &quot; x &quot; &amp; &quot;3 = &quot; &amp; (num*3)" newline="True"/>
+            <output expression="num &amp; &quot; x &quot; &amp; &quot;4 = &quot; &amp; (num*4)" newline="True"/>
+            <output expression="num &amp; &quot; x &quot; &amp; &quot;5 = &quot; &amp; (num*5)" newline="True"/>
+            <output expression="num &amp; &quot; x &quot; &amp; &quot;6 = &quot; &amp; (num*6)" newline="True"/>
+            <output expression="num &amp; &quot; x &quot; &amp; &quot;7 = &quot; &amp; (num*7)" newline="True"/>
+            <output expression="num &amp; &quot; x &quot; &amp; &quot;8 = &quot; &amp; (num*8)" newline="True"/>
+            <output expression="num &amp; &quot; x &quot; &amp; &quot;9 = &quot; &amp; (num*9)" newline="True"/>
+            <output expression="num &amp; &quot; x &quot; &amp; &quot;10 = &quot; &amp; (num*10)" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="entra21"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-08-18 07:44:52 "/>
+        <attribute name="created" value="ZW50cmEyMTtERVNLVE9QLTBOTjM4UEw7MjAyMy0wOC0xODsiMDc6NDI6NTcgIjsyODkx"/>
+        <attribute name="edited" value="ZW50cmEyMTtERVNLVE9QLTBOTjM4UEw7MjAyMy0wOC0xODsiMDc6NDQ6NTIgIjsxOzI5OTY="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <output expression="&quot;Escreva um programa que pe&#231;a ao usu&#225;rio dois n&#250;meros inteiros e exiba o resultado da divis&#227;o do primeiro n&#250;mero pelo segundo.&quot;" newline="True"/>
+            <declare name="num1, num2, resultado" type="Integer" array="False" size=""/>
+            <output expression="&quot;Digite o primeiro n&#250;mero&quot;" newline="True"/>
+            <input variable="num1"/>
+            <output expression="&quot;Digite o segundo n&#250;mero&quot;" newline="True"/>
+            <input variable="num2"/>
+            <assign variable="resultado" expression="num1 / num2"/>
+            <output expression="&quot;O resultado &#233;: &quot; &amp; resultado" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

@@ -1,0 +1,18 @@
+Três missionários e três canibais precisam atravessar um rio:
+barco para 2 pessoas
+missionários e canibais precisam estar sempre em números iguais.
+
+
+
+1) missionário_1 leva canibal_1
+2) missionário_1 retorna com barco
+3) missionário_1 leva canibal_2 	
+4) missionário_1 retorna com o barco
+5) missionário_1 e missionário_2 ambos ficam no rio
+6) canibal_2 retorna e leva canibal_3 
+7) canibal_3 retorna
+8) canibal_3 leva missionário_3
+9) canibal_3 retorna
+10) canibal_3 leva missionário_4
+11) canibal_3 retorna
+12) canibal_3 leva canibal_4 e ambos ficam no rio

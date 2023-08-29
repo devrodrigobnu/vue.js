@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="entra21"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-08-17 09:46:11 "/>
+        <attribute name="created" value="ZW50cmEyMTtERVNLVE9QLTBOTjM4UEw7MjAyMy0wOC0xNzsiMDk6MzY6NTMgIjsyODkx"/>
+        <attribute name="edited" value="ZW50cmEyMTtERVNLVE9QLTBOTjM4UEw7MjAyMy0wOC0xNzsiMDk6NDY6MTEgIjsxOzI5OTQ="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="n1, n2, resultado" type="Integer" array="False" size=""/>
+            <output expression="&quot;Numero 1: &quot;" newline="True"/>
+            <input variable="n1"/>
+            <output expression="&quot;Numero 2: &quot;" newline="True"/>
+            <input variable="n2"/>
+            <assign variable="resultado" expression="n1 -  n2"/>
+            <output expression="&quot;Resultado = &quot; &amp; resultado" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="entra21"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-08-18 07:50:57 "/>
+        <attribute name="created" value="ZW50cmEyMTtERVNLVE9QLTBOTjM4UEw7MjAyMy0wOC0xODsiMDc6NDk6MzcgIjsyODk2"/>
+        <attribute name="edited" value="ZW50cmEyMTtERVNLVE9QLTBOTjM4UEw7MjAyMy0wOC0xODsiMDc6NTA6NTcgIjsxOzI5OTg="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <output expression="&quot;Fa&#231;a um programa que solicite ao usu&#225;rio um n&#250;mero inteiro e exiba o resultado da multiplica&#231;&#227;o desse n&#250;mero por 3.&quot;" newline="True"/>
+            <declare name="num1, resultado" type="Integer" array="False" size=""/>
+            <output expression="&quot;Digite um n&#250;mero&quot;" newline="True"/>
+            <input variable="num1"/>
+            <assign variable="resultado" expression="num1 * 3"/>
+            <output expression="&quot;O resultado &#233;: &quot; &amp; resultado" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

@@ -1,0 +1,22 @@
+1) Criar um programa que permita o usuário
+entrar com o valor do lado de um quadrado
+e calcule sua área.
+
+2) Criar um programa que permita o usuário
+entrar com o valor do altura e da base de um retângulo
+e calcule sua área.
+
+3)Criar um programa que permita o usuário
+entrar com o valor do raio de um círculo
+e calcule sua área.
+
+4)Desafio: Criar um programa que permita o usuario
+entrar com os valores a,b,c de uma equação do segundo
+grau e:
+	a)Calcule o delta (delta = (b²) - 4 *a*c)
+	c)Calcular o valor de x'
+
+
+5) Calcular o volume de:
+	- Cubo
+	- Pirâmide

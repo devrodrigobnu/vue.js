@@ -1,0 +1,12 @@
+Um homem precisa atravessar com três cargas: lobo, bode e alfafa.
+* O lobo não pode ficar sozinho com o bode, senão ele o come
+* O bode não pode ficar sozinho com a alfafa, senão ele o come
+
+
+1)leva o bode 
+2)retorna sem nada
+3)leva o lobo
+4)retorna com o bode
+5)leva a alfafa
+6)retorna sem nada
+7)leva o bode

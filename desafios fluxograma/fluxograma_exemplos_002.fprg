@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="entra21"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-08-17 09:28:27 "/>
+        <attribute name="created" value="ZW50cmEyMTtERVNLVE9QLTBOTjM4UEw7MjAyMy0wOC0xNzsiMDk6MTQ6NDUgIjsyODg4"/>
+        <attribute name="edited" value="ZW50cmEyMTtERVNLVE9QLTBOTjM4UEw7MjAyMy0wOC0xNzsiMDk6Mjg6MjcgIjsyOzMwMDI="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <output expression="&quot;Digite um n&#250;mero inteiro: &quot;" newline="True"/>
+            <declare name="numero" type="Integer" array="False" size=""/>
+            <input variable="numero"/>
+            <if expression="numero &gt;= 0">
+                <then>
+                    <output expression="&quot;O n&#250;mero &#233; positivo&quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;O numero &#233; negativo&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

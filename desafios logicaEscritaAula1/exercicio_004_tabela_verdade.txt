@@ -1,0 +1,41 @@
+exercícios tabela verdade:
+
+1. (V & F) ou (F & V) = F ou F = F
+
+2. (V ou V) E (F ou F) = V & F = F
+
+3. (V & F) ou (V & V) & (F ou V) = F ou V & V = V
+
+4. (V ou F) e (F & V) ou (V & F) = V & F ou F = F ou F = F
+
+5. (V & V) ou (F & F) e (V ou F) = V ou F e V = V e V = V
+
+6. (F ou F) e (V & V) ou (F & V) = F e V ou F = F ou F = F
+
+7. (V ou F) e (F ou V) e (V e F) = V e V e F = V e F = F
+
+8. (V ou V) ou (F ou F) ou (V e F) e (F e V) = V ou V ou F e F = V ou F = V
+
+9. (V e F) ou (F e V) e (V ou F) = F ou F e V = F e V = F
+
+10. (V ou F) e (F e V) ou (V e F) = V e F ou F = F ou F = F
+
+11. (V e V) ou (F e F) e (V e F) = V ou F e F = V e F = F
+
+12. (V ou F) e (F ou V) e (V e F) = V e V e F = V e F = F
+
+13. (V ou V) ou (F ou F) ou (V e F) e (F e V) = V ou F ou F e F = F
+
+14. (V e F) ou (V e V) e (F ou V) e (F e F) = F ou V e V e F = V e F = F
+
+15. (F ou V) e (V ou F) e (F e V) ou (V e F) = V e V e F ou F = V e F = F
+
+16. (V ou V) ou (F ou F) e (V e F) ou (F e V) = V ou F e F ou F = V e F = F
+
+17. (V e V) ou (F ou F) e (V ou F) ou (F ou V) = V ou F e F ou V = F e V = V
+
+18. (F ou V) e (V ou F) ou (V e F) e (F e V) = F e F ou F e F = F
+
+19. (V e F) ou (F e V) e (V ou F) e (F e V) = F ou F e V e F = F
+
+20. (V ou F) e (F e V) ou (V e F) ou (F ou V) = V e F ou V ou V = V

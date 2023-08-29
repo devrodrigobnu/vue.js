@@ -1,0 +1,79 @@
+	exercicio treinando algoritmo:
+
+Crie uma sequência lógica para escovar os dentes:
+1. Entrar no banheiro
+2. Ligar luz do banheiro
+3. Retirar embalagem da pasta de dente
+4. Abrir a embalagem da pasta de dente
+5. Colocar pasta de dente na escova de dente
+6. Escovar o dente
+7. Guardar pasta de dente
+8. Guadar escova de dente
+9. Apagar luz do banheiro
+10. Sair do banheiro
+
+
+	2.exercício 
+Dado uma balança de pratos e um conjunto de maçãs,
+crie um algoritmo para determinal qual a mação mais pesada.
+
+1. Colocar uma maça no prato da esquerda
+2. Colocar outra maça no prato da direita
+3. Verificar qual maçã é a mais pesada
+4. Retirar a maçã mais leve
+5. Fazer o mesmo processo para o restante das maças
+
+
+
+	3.exercício
+Imagine que uma pessoa decida ir de Uber para uma reunição de negócios. Monte
+um algoritmo com a sequência de ações para que ela chegue ao prédio onde 
+vai ocorrer a reunião.
+
+
+1. Definir um horário de saída baseado no horário da reunião
+2. Definir destino
+3. Desbloquear o celular
+4. Executar aplicativo uber
+5. Solicitar o uber
+6. Sair de casa
+7. Fechar a porta de casa
+8. Entrar no carro
+9. Ir até o destino
+10. Sair do carro
+11. Entrar na reunião
+
+
+	4.exercício
+
+Crie um algoritmo para trocar uma lâmpada
+
+1. Verificar se a luz está funcionando
+2. Se a luz estiver com defeito executar os passos: 3, 4, 5 e 6.
+3. Retirar luz com defeito
+4. Jogar luz com defeito fora
+5. Abrir embalagem da luz nova
+6. Colocar luz nova no bocal
+7. Se a luz estiver funcionando executar o passo: 8
+8. Testar a luz
+9. Desligar a luz
+10. Sair 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

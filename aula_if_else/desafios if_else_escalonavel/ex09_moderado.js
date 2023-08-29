@@ -1,0 +1,1 @@
+// Determine se um triângulo é equilátero, isósceles ou escaleno.

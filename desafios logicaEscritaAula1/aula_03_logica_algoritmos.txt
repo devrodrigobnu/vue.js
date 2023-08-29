@@ -1,0 +1,45 @@
+			Lógica de programação com algoritmos
+
+Diariamente executamos uma série de acõe. Intuitivamente, aquilo que estamos
+executando é um algoritmo.
+um algoritmo é uma sequência de instruções ordenadas de forma lógica para
+a resolução de uma determinada tarefa ou problema.
+
+
+Algoritmo é uma receita de bolo, de um processo de computador.
+Os objetos são manipulados por essas receitas (variaveis)
+Um algoritmo é formalmente uma sequência finita de passos que levam 
+a execução de tarefa.
+
+
+	exemplo de algoritmo:
+1. escreva o primeiro numero
+2. escreva o segundo número
+3. Some o primeiro número com o segundo e escreva o resultado
+
+
+	regras básicas sempre usar o mesmo verbo (imperativo)
+exemplo mascar  chiclete
+"pegar" chiclete
+"retirar" o embrulho
+"mascar" o chiclete
+"jogar" papel no lixo
+
+
+	O que são algoritmos?
+A resolução de qualquer problema para o mundo da informática estrutura-se 
+segundo tres fases essenciais:
+1. Análise de problema
+2. Desenho de 
+3. Codificação
+
+
+	Para lembrar!!!
+1. A ordem lógica da execução das tarefas importantes.
+2. Todo algorítmo tem ínicio e fim
+3. Um algotimo tem que ser completo
+4. Um algoritmo deve ter um alto índice de detalhamento
+5. Cada tarefa ou etapa é chamada de instrução
+
+
+
