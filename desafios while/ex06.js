@@ -4,3 +4,8 @@
 const req = require('prompt-sync')
 const prompt = req()
 
+for (let i = 1; i <= 5; i++){
+    console.log(i)
+}
+
+//--------------------------------------------------------------------------------------

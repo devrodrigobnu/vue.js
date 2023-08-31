@@ -5,32 +5,33 @@ const req = require('prompt-sync')
 const prompt = req()
 
 
-let cidadeA, cidadeB, taxaCrescimentoA, taxaCrescimentoB
+let cityA, cityB, growthRateA, growthRateB;
 
-while (isNaN(cidadeA) || isNaN(cidadeB)){
-    cidadeA = Number(prompt('Digite quantos cidadãos tem na cidade A: '))
-    cidadeB = Number(prompt('Digite quantos cidadãos tem na cidade B: '))
+while (isNaN(cityA) || isNaN(cityB)){
+    cityA = Number(prompt('Enter the population of city A: '));
+    cityB = Number(prompt('Enter the population of city B: '));
 
-    if (isNaN(cidadeA) || isNaN(cidadeB)){
-        console.log('Entrada inválida, digite novamente: ')
+    if (isNaN(cityA) || isNaN(cityB)){
+        console.log('Invalid input, please enter again: ');
     }
 }
 
+while (isNaN(growthRateA) || isNaN(growthRateB)){
+    growthRateA = Number(prompt('Enter the annual growth rate of city A: '));
+    growthRateB = Number(prompt('Enter the annual growth rate of city B: '));
 
-while (isNaN(taxaCrescimentoA) || isNaN(taxaCrescimentoB)){
-    taxaCrescimentoA = Number(prompt('Digite a taxa de crescimento anual da cidade A: '))
-    taxaCrescimentoB = Number(prompt('Digite a taxa de crescimento anual da cidade B: '))
-
-    if (isNaN(taxaCrescimentoA) || isNaN(taxaCrescimentoB)){
-        console.log('Entrada inválida, digite novamente: ')
+    if (isNaN(growthRateA) || isNaN(growthRateB)){
+        console.log('Invalid input, please enter again: ');
     }
 }
-let anos = 0
 
-while (cidadeA < cidadeB){
-    cidadeA += cidadeA * taxaCrescimentoA
-    cidadeB += cidadeB * taxaCrescimentoB
-    anos++
+let years = 0;
+
+while (cityA < cityB){
+    cityA += cityA * growthRateA;
+    cityB += cityB * growthRateB;
+    years++;
 }
 
-console.log(`Levará ${anos} anos para a população da cidade A ultrapassar ou igualar a população da cidade B.`);
+console.log(`It will take ${years} years for the population of city A to surpass or equal the population of city B.`);
+

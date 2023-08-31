@@ -7,15 +7,14 @@ const prompt = req()
 
 
 
-while (true){
-    let usuario = prompt('Digite o nome de usuário: ')
-    let senha = prompt('Digite sua senha: ')
+while (true) {
+    let username = prompt('Enter your username: ');
+    let password = prompt('Enter your password: ');
 
-    if(senha === usuario) {
-        console.log('Senha não pode ser igual usuario!')
+    if (password === username) {
+        console.log('Password cannot be the same as the username!');
     } else {
-        console.log('Senha criada com sucesso!')
-        break
+        console.log('Password created successfully!');
+        break;
     }
-    
 }

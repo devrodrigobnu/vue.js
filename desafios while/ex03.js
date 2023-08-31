@@ -9,29 +9,29 @@ const req = require('prompt-sync')
 const prompt = req()
 
 
-let nome = prompt('Digite o seu nome: ')
-while(nome.length < 3){
-    nome = prompt('Nome deve conter pelo menos 3 caracteres, digite novamente: ')
+let nome = prompt('Enter your name: ');
+while (nome.length < 3) {
+    nome = prompt('Name must contain at least 3 characters. Please enter again: ');
 }
 
-let idade = Number(prompt('Digite sua idade: '))
-while(idade < 0 || idade > 150){
-    idade = prompt('Idade inválida, digite novamente: ')
+let idade = Number(prompt('Enter your age: '));
+while (idade < 0 || idade > 150 || isNaN(idade)) {
+    idade = Number(prompt('Invalid age. Please enter again: '));
 }
 
-let salario = Number(prompt('Digite seu salário: '))
-while(salario <= 0){
-    salario = prompt('Salário inválido, digite novamente: ')
+let salario = Number(prompt('Enter your salary: '));
+while (salario <= 0 || isNaN(salario)) {
+    salario = Number(prompt('Invalid salary. Please enter again: '));
 }
 
-let sexo = prompt('Digite "feminino" para feminino ou "masculino" para masculino: ')
-while(sexo !== 'feminino' && sexo !== 'masculino'){
-    sexo = prompt('Sexo informado inválido, digite novamente:')
+let sexo = prompt('Enter "female" for female or "male" for male: ');
+while (sexo !== 'female' && sexo !== 'male') {
+    sexo = prompt('Invalid gender input. Please enter again: ');
 }
 
-let estadoCivil = prompt('Digite seu estado civil: "solteiro", "casado", "viuvo", "divorciado": ')
-while(estadoCivil !== 'solteiro' && estadoCivil !== 'casado' && estadoCivil !== 'viuvo' && estadoCivil !== 'divorciado'){
-    estadoCivil = promtp('Estado civil informado inválido, digite novamente: ')
+let estadoCivil = prompt('Enter your marital status: "single", "married", "widowed", or "divorced": ');
+while (estadoCivil !== 'single' && estadoCivil !== 'married' && estadoCivil !== 'widowed' && estadoCivil !== 'divorced') {
+    estadoCivil = prompt('Invalid marital status input. Please enter again: ');
 }
 
-console.log(`Seu nome é ${nome}, do sexo ${sexo}, tem ${idade} anos, com salário de R$${salario} reais, estado civil é ${estadoCivil}`)
+console.log(`Your name is ${nome}, gender is ${sexo}, age is ${idade} years, salary is $${salario}, and marital status is ${estadoCivil}.`);

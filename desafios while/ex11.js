@@ -3,23 +3,22 @@
 const req = require('prompt-sync')
 const prompt = req()
 
-let soma = 0
+let sum = 0;
 
-const numero_1 = parseInt(prompt('Digite o primeiro número: '));
-const numero_2 = parseInt(prompt('Digite o segundo número: '));
+const number_1 = parseInt(prompt('Enter the first number: '));
+const number_2 = parseInt(prompt('Enter the second number: '));
 
-if (isNaN(numero_1) || isNaN(numero_2)) {
-    console.log('Digite apenas números!');
+if (isNaN(number_1) || isNaN(number_2)) {
+    console.log('Please enter only numbers!');
 } else {
-    const menor = Math.min(numero_1, numero_2);
-    const maior = Math.max(numero_1, numero_2);
+    const smaller = Math.min(number_1, number_2);
+    const larger = Math.max(number_1, number_2);
     
-    console.log(`Números no intervalo de ${menor} e ${maior}`);
+    console.log(`Numbers in the range from ${smaller} to ${larger}`);
 
-    for (let i = menor; i <= maior; i++) {
+    for (let i = smaller; i <= larger; i++) {
         console.log(i);
-        soma += i
+        sum += i;
     }
-
 }
-console.log(`A soma é ${soma}`)
+console.log(`The sum is ${sum}`);

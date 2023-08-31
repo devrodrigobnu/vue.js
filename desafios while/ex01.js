@@ -5,14 +5,13 @@ const req = require('prompt-sync')
 const prompt = req()
 
 
-while (true){
-    let num = parseFloat(prompt('Digite um valor entre 0 e 10: '))
+while (true) {
+    let num = parseFloat(prompt('Enter a value between 0 and 10: '));
 
-    if(isNaN(num) || num < 0 || num > 10){
-        console.log('Nota inválida. Digite um valor válido')
-    } else{
-        console.log('Nota válida')
-        break
+    if (isNaN(num) || num < 0 || num > 10) {
+        console.log('Invalid input. Please enter a valid value.');
+    } else {
+        console.log('Valid input.');
+        break;
     }
 }
-

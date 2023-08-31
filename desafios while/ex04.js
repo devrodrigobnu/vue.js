@@ -6,18 +6,18 @@
 const req = require('prompt-sync')
 const prompt = req()
 
-let cidadeA = 80000
-const taxaCrescimentoA = 0.03
+let cityA = 80000;
+const growthRateA = 0.03;
 
-let cidadeB = 200000
-const taxaCrescimentoB = 0.015
+let cityB = 200000;
+const growthRateB = 0.015;
 
-let anos = 0
+let years = 0;
 
-while (cidadeA < cidadeB){
-    cidadeA += cidadeA * taxaCrescimentoA
-    cidadeB += cidadeB * taxaCrescimentoB
-    anos++
+while (cityA < cityB){
+    cityA += cityA * growthRateA;
+    cityB += cityB * growthRateB;
+    years++;
 }
 
-console.log(`Levará ${anos} anos para a população do pais A ultrapassar o país B`)
+console.log(`It will take ${years} years for the population of country A to surpass country B.`);
