@@ -3,21 +3,19 @@
 // 200000 habitantes com uma taxa de crescimento de 1.5%. 
 // Faça um programa que calcule e escreva o número de anos necessários para 
 // que a população do país A ultrapasse ou iguale a população do país B, mantidas as taxas de crescimento.
-const req = require('prompt-sync')
-const prompt = req()
 
-let cityA = 80000;
-const growthRateA = 0.03;
+let city_a = 80000
+let city_b = 200000
 
-let cityB = 200000;
-const growthRateB = 0.015;
+rate_a = 0.03
+rate_b = 0.015
 
-let years = 0;
+years = 0
 
-while (cityA < cityB){
-    cityA += cityA * growthRateA;
-    cityB += cityB * growthRateB;
-    years++;
+while(city_a < city_b){
+    city_a += city_a * rate_a
+    city_b += city_b * rate_b
+    years++
+
 }
-
-console.log(`It will take ${years} years for the population of country A to surpass country B.`);
+console.log(`It will take ${years} until city A reaches the population of city B.`)

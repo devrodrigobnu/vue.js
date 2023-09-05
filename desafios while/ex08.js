@@ -19,3 +19,7 @@ for (let i = 1; i <= 5; i++){
 const media = sum / 5
 console.log(`The sum of the numbers is: ${sum}`) 
 console.log(`The average of the numbers is: ${media}`) 
+
+
+
+
