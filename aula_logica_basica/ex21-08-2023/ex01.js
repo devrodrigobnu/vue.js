@@ -2,6 +2,7 @@
 // entrar com o valor do lado de um quadrado
 // e calcule sua área.
 
+
 function Main(user) {
     let lado1 = parseFloat(prompt('Digite um valor válido em metros: '))
     if (!isNaN(lado1) && lado1 > 0) {

@@ -3,7 +3,7 @@
 const req = require('prompt-sync')
 const prompt = req()
 
-let numero = prompt('Digite um número: ')
+let numero = Number(prompt('Digite um número: '))
 let i = 0
 
 while (i <= numero) {
