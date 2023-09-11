@@ -5,3 +5,5 @@
 const req = require('prompt-sync')
 const prompt = req()
 
+let numero = Number(prompt('Digite um número: '))
+

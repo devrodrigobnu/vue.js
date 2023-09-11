@@ -1,0 +1,24 @@
+Na competição Pokémon de apresentação, cada treinador recebe notas de sete juízes. A melhor e a pior nota são eliminadas, e a nota final do treinador é calculada como a média das notas restantes.
+Você deve criar um programa em JavaScript que permita a um treinador Pokémon inserir seu nome e as notas atribuídas pelos sete juízes em sua apresentação. O programa calculará a média final, e mostrará os resultados, conforme a descrição abaixo:
+●	Solicite ao treinador Pokémon que insira seu nome.
+●	Em seguida, permita que o treinador insira as notas atribuídas pelos sete juízes. As notas não são informadas ordenadas.
+●	Calcule a média final.
+
+
+Mostre o seguinte resultado:
+
+Exemplo de Saída:
+Treinador Pokémon: Ash Ketchum
+Nota do Jurado 1: 9.5
+Nota do Jurado 2: 8.0
+Nota do Jurado 3: 9.0
+Nota do Jurado 4: 8.5
+Nota do Jurado 5: 9.2
+Nota do Jurado 6: 8.8
+Nota do Jurado 7: 9.7
+
+Resultado final:
+Treinador Pokémon: Ash Ketchum
+Melhor nota: 9.7
+Pior nota: 8.0
+Média das notas: 9.07
