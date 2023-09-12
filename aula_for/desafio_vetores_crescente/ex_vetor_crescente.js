@@ -25,7 +25,16 @@ indice = numeros.indexOf(42)
 console.log(indice)
 
 // 8.	Verifique se o vetor está vazio.
+let numeros = [1, 2, 3, 4, 5]
+if (numeros.length > 0){
+    console.log('A lista não está vazia.')
+} else {
+    console.log('A lista está vazia.')
+}
+
 // 9.	Copie o vetor original para um novo vetor.
+
+
 // 10.	Ordene o novo vetor em ordem crescente.
 // 11.	Inverta a ordem dos elementos no vetor original.
 // 12.	Crie um vetor com nomes de frutas (por exemplo, maçã, banana, morango).
