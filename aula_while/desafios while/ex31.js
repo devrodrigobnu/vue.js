@@ -14,3 +14,31 @@
 // Dinheiro: R$ 20.00
 // Troco: R$ 11.00
 // 	...
+
+const req = require('prompt-sync')
+const prompt = req()
+
+console.log('LOJAS TABAJARA')
+let valorTotal = 0
+let i = 0
+
+while (true){
+    let valor = parseFloat(prompt(`Informe o valor do ${i+1}º produto (ou 0 para sair): `))
+    if (valor === 0){
+        break
+    }
+    valorTotal += valor
+    i++
+}
+console.log(`Total: R$${valorTotal.toFixed(2)}`)
+
+while(true){
+    let dinheiro = parseFloat(prompt('Valor pago em dinheiro: R$'))
+    if (dinheiro < valorTotal){
+        console.log('Dinheiro insuficiente. Informe um valor igual ou maior.')
+    } else {
+        let troco = dinheiro - valorTotal
+        console.log(`Troco: R$${troco.toFixed(2)}`)
+        break
+    }
+}
