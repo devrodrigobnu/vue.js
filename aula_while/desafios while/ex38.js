@@ -10,3 +10,14 @@ const req = require('prompt-sync')
 const prompt = req()
 
 
+const salarioInicial = parseFloat(prompt('Digite o salario inicial do funcionário: '))
+let salarioAtual = salarioInicial
+
+const aumento1996 = 1.5/100
+
+for (let i = 1996; i <= 2023; i++){
+    let aumentoAno = aumento1996 * 2
+    salarioAtual += salarioAtual * aumentoAno
+}
+
+console.log(`O salário atual do funcionário é de: R$${salarioAtual.toFixed(2)}`)
