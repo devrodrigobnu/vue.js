@@ -8,8 +8,7 @@
 // os códigos e valores do cliente mais alto, do mais baixo, do mais 
 // gordo e do mais magro, além da média das alturas e dos pesos dos clientes
 
-const req = require('prompt-sync')
-const prompt = req()
+const prompt = require('prompt-sync')()
 
 console.log('CENSO - ACADEMIA')
 
@@ -20,52 +19,56 @@ let pesos = []
 let maiorAltura = -1
 let menorAltura = 99999
 let maisGordo = -1
-let maisMagro = 99999
+let maisMagro = 99999 
 let mediaAltura = 0
 let mediaPeso = 0
-// Loop
-while(true){
-    let codigo = Number(prompt('Informe o código de usuário: '))
-    if (codigo === 0){
-        console.log('Programa parou') 
-        break
+
+// Loop para coleta de dados
+while (true) {
+    let codigo = Number(prompt('Informe o código de usuário (ou 0 para encerrar): '))
+    if (codigo === 0) {
+        console.log('Programa encerrado.')
+        break;
     }
     let altura = parseFloat(prompt('Informe a altura do usuário (em cm): '))
     let peso = parseFloat(prompt('Informe o peso do usuário (em kg): '))
 
-// Validação
-
-    if (altura > maiorAltura){
+    // Validação e atualização dos valores máximos e mínimos
+    if (altura > maiorAltura) {
         maiorAltura = altura
     }
-    if (altura < menorAltura){
+    if (altura < menorAltura) {
         menorAltura = altura
     }
-    if (peso > maisGordo){
+    if (peso > maisGordo) {
         maisGordo = peso
     }
-    if (peso < maisMagro){
+    if (peso < maisMagro) {
         maisMagro = peso
     }
-// Adicionar a array
+
+    // Adicionar às arrays
     codigos.push(codigo)
     alturas.push(altura)
     pesos.push(peso)
+}
 
 // Calcular médias
 let somaAltura = 0
 let somaPeso = 0
-for (let i = 0; i < alturas.length; i++){
+
+for (let i = 0; i < alturas.length; i++) {
     somaAltura += alturas[i]
     somaPeso += pesos[i]
 }
-mediaAltura = somaAltura / alturas.length 
+
+mediaAltura = somaAltura / alturas.length
 mediaPeso = somaPeso / pesos.length
 
 // Impressão dos resultados
-    console.log(`Cliente com maior altura: ${maiorAltura}`)
-    console.log(`Cliente com menor altura: ${menorAltura}`)
-    console.log(`Cliente mais gordo: ${maisGordo}`)
-    console.log(`Cliente mais magro: ${maisMagro}`)
-    console.log(`Média de altura: ${mediaAltura}`)
-}
+console.log(`Cliente com maior altura: ${maiorAltura.toFixed(2)} cm`)
+console.log(`Cliente com menor altura: ${menorAltura.toFixed(2)} cm`)
+console.log(`Cliente mais gordo: ${maisGordo.toFixed(2)} kg`)
+console.log(`Cliente mais magro: ${maisMagro.toFixed(2)} kg`)
+console.log(`Média de altura: ${mediaAltura.toFixed(2)} cm`)
+console.log(`Média de peso: ${mediaPeso.toFixed(2)} kg`)
