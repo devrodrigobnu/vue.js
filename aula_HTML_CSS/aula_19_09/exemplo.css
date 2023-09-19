@@ -1,0 +1,16 @@
+h1{
+    color: rgb(7, 252, 39);
+    font-size: 150;
+    background-color: rgb(77, 20, 209);
+    width: 150px;
+    height: 100px;
+}
+
+.tester{
+    color: rgb(245, 7, 7);
+    font-size: 20px;
+    background-color: rgb(14, 13, 17);
+    width: 150px;
+    height: 50px;
+}
+

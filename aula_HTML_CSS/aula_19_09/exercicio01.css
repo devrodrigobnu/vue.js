@@ -1,0 +1,40 @@
+.ex01{
+    font-size: 35px;
+    background-color: hotpink;
+    color: green;
+    border-radius: 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.enviar{
+    background-color: royalblue;
+    border: none;
+    padding: 15px;
+    color: white;
+    border-radius: 10px; 
+    
+}
+
+.confirmar {
+    background-color: green;
+    border: none;
+    padding: 15px;
+    color: white;
+    border-radius: 10px;
+
+}
+
+.cancelar {
+    background-color: red;
+    border: none;   
+    padding: 15px;
+    color: white;
+    border-radius: 10px;
+}
+
+.dados-usuario{
+    background-color: salmon;
+    padding: 20px;
+    margin-right: 350px;
+    border: 2px solid black;
+}

@@ -1,0 +1,10 @@
+https -> Mais segurança (usado fora do servidor local)
+http -> Menos segurança (usado em servidor local)
+
+os sites precisam da estrutura, design e logica.
+1º - aprendemos lógica
+2º - estamos aprendendo a partir de hoje a estrutura
+
+
+o arquivo html tem tags que criam conteudos diferentes no sites.
+exemplo: h1 
