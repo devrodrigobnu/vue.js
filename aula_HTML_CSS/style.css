@@ -41,3 +41,13 @@ div {
 .tabela-cor{
     color: black
 }
+
+#video-pokemon {
+    text-align: center;
+    margin-top: 20px;
+    width: 100%;
+    max-width: 600px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
