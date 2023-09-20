@@ -1,0 +1,62 @@
+body {
+    overflow: hidden;
+    margin: 0;
+}
+
+#background {
+    position: fixed;
+    z-index: -1;
+    inset: 0;
+    width: 100%;
+    height: 100vh;
+    color: white;
+}
+
+#background video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#background::after {
+    content: '';
+    width: inherit;
+    height: inherit;
+    position: fixed;
+    inset: 0;
+    background: linear-gradient(109deg, rgba(10, 12, 16, 0.99) 15%, rgba(10, 12, 16, 0.7) 50%, rgba(10, 12, 16, 0.99) 85%)
+}
+
+main {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+    margin-top: 100px;
+}
+
+@font-face {
+    font-family: "FonteEstilosa";
+    src: url('/desafio03/fontes/funtime.otf') format('woff2');
+}
+
+
+.background-text {
+    font-family: "FonteEstilosa", sans-serif;
+    font-size: 55px;
+    font-weight: bold;
+    letter-spacing: 20px;
+    color: #f50abe;
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+
+
+.imagem-hover:hover {
+    opacity: 0.5;
+    transition: opacity 0.2s ease;
+}
