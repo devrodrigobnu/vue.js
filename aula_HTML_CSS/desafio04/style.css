@@ -1,0 +1,84 @@
+body {
+    font-family: 'Courier New', Courier, monospace;
+    background-color: rgb(255, 255, 255);
+    margin: 0;
+    padding: 0;
+}
+
+
+header {
+    background-color: rgb(160, 155, 159);
+    color: black;
+    padding: 10px 10px;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+.header {
+    background-image: url('/desafio04/cabecalho.jpg');
+    background-size: cover;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+nav {
+    display: inline-block;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+
+}
+
+form {
+    margin-top: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+input[type='text'],
+input[type='number'] {
+    width: 98.7%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+h1 {
+    color: black;
+
+}
+
+.cadastro-de-viagem {
+    margin: 10px;
+    width: 100%;
+    text-align: center;
+}
+
+.cabecalho {
+    font-size: 25px;
+}
+
+.cointaner {
+    max-width: 800px;
+    margin: 20px auto;
+    background-color: #ffff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+}
