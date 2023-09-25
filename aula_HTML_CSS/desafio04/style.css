@@ -16,7 +16,7 @@ header {
 }
 
 .header {
-    background-image: url('/desafio04/cabecalho.jpg');
+    background-image: url('/vue.js/aula_HTML_CSS/desafio04/cabecalho.jpg');
     background-size: cover;
     color: white;
     padding: 20px;
@@ -81,4 +81,12 @@ h1 {
     background-color: #ffff;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     border-radius: 5px;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    margin-top: 50px;
 }
