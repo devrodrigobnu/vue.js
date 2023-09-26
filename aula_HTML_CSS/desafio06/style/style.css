@@ -1,0 +1,125 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Courier New', Courier, monospace;
+    background: rgb(255, 179, 0);
+    background: linear-gradient(90deg, rgba(255, 179, 0, 1) 0%, rgba(208, 111, 67, 1) 50%, rgba(240, 182, 96, 1) 100%);
+}
+
+#menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 90px;
+}
+
+img {
+    width: 95px;
+}
+
+.header {
+    display: flex;
+    flex-direction: row;
+    background-color: #14141c;
+    justify-content: flex-start;
+    align-items: center;
+    box-shadow: 1px 20px 20px goldenrod;
+
+}
+
+.menu-navigation {
+    font-size: 135%;
+    margin-left: auto;
+    padding-right: 100px;
+    letter-spacing: 1px;
+    word-spacing: 15px;
+
+}
+
+.menu-navigation a {
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+    color: gold;
+}
+
+h1 {
+    color: gold;
+    font-family: 'Tourney', cursive;
+    font-size: 215%;
+    text-decoration: underline;
+    margin-left: 20px;
+    border-radius: 10px;
+    animation: evoston-store 2s linear 0s 1 normal forwards;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+}
+
+.container {
+    color: white;
+    padding-top: 120px;
+    text-align: center;
+}
+
+@keyframes evoston-store {
+    0% {
+        animation-timing-function: ease-out;
+        transform: scale(1);
+        transform-origin: center center;
+    }
+
+    10% {
+        animation-timing-function: ease-in;
+        transform: scale(0.91);
+    }
+
+    17% {
+        animation-timing-function: ease-out;
+        transform: scale(0.98);
+    }
+
+    33% {
+        animation-timing-function: ease-in;
+        transform: scale(0.87);
+    }
+
+    45% {
+        animation-timing-function: ease-out;
+        transform: scale(1);
+    }
+}
+
+.fotos {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 150px;
+    
+}
+
+.fotos img {
+    width: 350px;
+    height: 350px;
+    border-radius: 20px;
+    transition: transform 0.3s ease;
+    border: 2px solid #000;
+
+}
+
+.fotos img:hover {
+    transform: scale(1.2);
+    cursor: pointer;
+    
+}
+
+
+
+.comprar-button {
+    display: flex;
+    padding: 5px 10px;
+    cursor: pointer;
+}

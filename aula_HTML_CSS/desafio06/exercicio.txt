@@ -1,0 +1,7 @@
+entrar no site adobe.color
+
+1- Escolher uma paleta de cores criativa
+2- Criar um cabeçalho do zero usando-a
+3- Escolha um tema para o seu novo site 
+4- Use um hover
+5- Escolha qualquer lugar ou tag pra usar um gradient
