@@ -1,0 +1,32 @@
+.quadrado {
+    width: 200px;
+    height: 200px;
+    background-color: aqua;
+    /* animation: animacao1 5s infinite; */
+}
+
+/* @keyframes animacao1{
+    from {
+        margin-right: 0;
+    } to {
+        margin-left: 500px;
+        background-color: brown;
+    }
+} */
+
+/* @keyframes animacao1 {
+    20% {
+        margin-left: 500px;
+        margin-top: 0;
+    }
+
+    40% {
+        margin-top: 500px;
+        margin-left: 500px;
+    }
+    
+    60%{
+        margin-top: 500px;
+        margin-left: 0;
+    }
+} */

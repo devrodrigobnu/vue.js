@@ -1,14 +1,18 @@
+/* margin e padding inicial */
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
+/* Definido a fonte, e estilo de background do body */
 body {
     font-family: 'Courier New', Courier, monospace;
     background: rgb(255, 179, 0);
     background: linear-gradient(90deg, rgba(255, 179, 0, 1) 0%, rgba(208, 111, 67, 1) 50%, rgba(240, 182, 96, 1) 100%);
 }
 
+/* Fixa o cabeçalho no topo */
 #menu {
     position: fixed;
     top: 0;
@@ -17,10 +21,12 @@ body {
     height: 90px;
 }
 
+/* Define o tamanho do logo do cabeçalho */
 img {
     width: 95px;
 }
 
+/* Define o estilo do cabeçalho*/
 .header {
     display: flex;
     flex-direction: row;
@@ -31,6 +37,9 @@ img {
 
 }
 
+/* Isso define o estilo da navegação do menu, incluindo 
+o tamanho da fonte, margem à esquerda, preenchimento à direita, 
+espaçamento de letras e espaçamento de palavras. */
 .menu-navigation {
     font-size: 135%;
     margin-left: auto;
@@ -40,6 +49,8 @@ img {
 
 }
 
+/* Isso estiliza os links da navegação do menu, removendo sublinhado, 
+definindo a cor do texto e o cursor ao passar o mouse. */
 .menu-navigation a {
     text-decoration: none;
     color: inherit;
@@ -47,6 +58,9 @@ img {
     color: gold;
 }
 
+/* Isso estiliza um elemento <h1>, definindo cor, tamanho da fonte,
+ sublinhado, margem à esquerda, borda arredondada e uma animação chamada 
+ evoston-store. */
 h1 {
     color: gold;
     font-family: 'Tourney', cursive;
@@ -59,12 +73,16 @@ h1 {
     animation-iteration-count: infinite;
 }
 
+/* Isso estiliza um elemento com a classe .container, definindo a cor 
+do texto, preenchimento superior e alinhamento de texto. */
 .container {
     color: white;
     padding-top: 120px;
     text-align: center;
 }
 
+/* Isso define a animação chamada evoston-store usando keyframes para 
+criar um efeito de escala intermitente. */
 @keyframes evoston-store {
     0% {
         animation-timing-function: ease-out;
@@ -93,33 +111,130 @@ h1 {
     }
 }
 
+/* Isso estiliza um elemento com a classe .fotos, usando um layout flexível, 
+espaçamento ao redor das imagens e margem superior. */
 .fotos {
     display: flex;
     justify-content: space-around;
-    align-items: center;
     margin-top: 150px;
-    
+
 }
 
+/* Isso estiliza as imagens dentro do elemento .fotos, definindo largura, 
+altura, borda arredondada, uma transição de transformação suave e uma borda 
+sólida preta. */
 .fotos img {
-    width: 350px;
-    height: 350px;
+    width: 300px;
+    height: 300px;
     border-radius: 20px;
     transition: transform 0.3s ease;
     border: 2px solid #000;
 
 }
 
+/* Isso cria um efeito de zoom nas imagens quando o mouse passa por 
+cima e altera o cursor para o ícone de mão. */
 .fotos img:hover {
     transform: scale(1.2);
     cursor: pointer;
-    
+
 }
 
 
-
+/* Isso estiliza um elemento com a classe .comprar-button, definindo cor de 
+texto, cor de fundo, exibição flexível, preenchimento, cursor e margem à 
+esquerda. */
 .comprar-button {
+    color: goldenrod;
+    background-color: black;
     display: flex;
     padding: 5px 10px;
     cursor: pointer;
+    margin-left: 37%;
+
+}
+
+/* Isso estiliza o elemento footer e define a cor e adicionar margem para ele */
+footer {
+    background-color: #14141c;
+    margin-top: 120px;
+}
+
+/* Estiliza um elemento com a classe .footer-container, definindo sua largura 
+como 100% e adicionando preenchimento de 70 pixels no topo, 30 pixels nas laterais
+e 20 pixels na parte inferior. */
+.footer-container {
+    width: 100%;
+    padding: 20px 30px;   
+}
+/* Aqui estilizamos os icones de redes sociais, deixamos flexivel e colocamos ao 
+centro */
+.social-icons {
+    display: flex;
+    justify-content: center;
+}
+
+/* Removi o sublinhado, adicionei preenchimento com padding, defini a cor  de f
+undo branco e cria uma borda arredondada*/
+.social-icons a {
+    text-decoration: none;
+    padding: 10px;
+    background-color: white;
+    margin: 10px;
+    border-radius: 50%;
+}
+
+/* Aqui defini o tamanho da fonte, cor do texto back e a opacidade do icone */
+.social-icons a i {
+    font-size: 2em;
+    color: black;
+    opacity: 0.9;
+}
+
+/* Quando o mouse passa por cima dos icones ele mudar de cor fazendo a transição  
+de white pra black*/
+.social-icons a:hover {
+    background-color: #111;
+    transition: 0.5s;
+}
+
+/* Define o comportamento quando o mouse passa sobre os ícones dentro dos links 
+da classe .social-icons. Altera a cor do texto para branco e aplica uma transição
+ de 0.5 segundos para suavizar a mudança de cor. */
+.social-icons a:hover i {
+    color: white;
+    transition: 0.5;
+}
+
+/* Estiliza um elemento com a classe .footer-nav, adicionando uma 
+margem de 30 pixels na parte superior e inferior. */
+.footer-nav {
+    margin: 30px 0;
+}
+
+/* Define seu conteúdo como um layout flexível com alinhamento centralizado 
+horizontalmente. */
+.footer-nav ul {
+    display: flex;
+    justify-content: center;
+}
+
+.footer-nav ul li {
+    color: rgb(248, 172, 7);
+    margin: 20px;
+    text-decoration: none;
+    font-size: 1.3em;
+    opacity: 0.7;
+    transition: 0.5s;
+
+}
+
+/* Tira o sublinhado dos links e altera a cor para gold */
+.footer-nav ul li a {
+    text-decoration: none;
+    color: gold;
+}
+
+.main-container{
+    max-height: 100vh;
 }
