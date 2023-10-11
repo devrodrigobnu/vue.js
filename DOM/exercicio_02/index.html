@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="main.js"></script>
+</head>
+<body>
+    <h1>CADASTRO DE PRODUTO</h1>
+    <form id="cadastroProduto">
+        <label for="nome">Nome do produto:</label>
+        <input type="text" id="nome" placeholder="Digite o produto">
+        <label for="preco">Preço do produto:</label>
+        <input type="number" id="preco" placeholder="Digite o preço">
+        <label for="descricao">Descrição do produto:</label>
+        <input type="text" id="descricao" placeholder="Digite a descrição">
+        <button type="button" onclick="cadastrarProduto()">Cadastrar</button>
+    </form>
+
+    <h2>Lista de produtos cadastrados</h2>
+    <ul id="produtosCadastrados"></ul>
+</body>
+</html>

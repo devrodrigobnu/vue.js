@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversor de Moedas</title>
+    <script src="main.js"></script>
+</head>
+<body>
+    <h1>Conversor de Moedas</h1>
+    <label for="valorReais">Valor em Reais (BRL):</label>
+    <input type="number" id="valorReais" placeholder="Digite o valor em reais">
+
+    <br>
+    
+    <button onclick="converterMoeda('dolar')">Converter para Dólar (USD)</button>
+    <button onclick="converterMoeda('euro')">Converter para Euro (EUR)</button>
+    <button onclick="converterMoeda('iene')">Converter para Iene (JPY)</button>
+    <br>
+    <p id="resultado"></p>
+</body>
+</html>
