@@ -3,9 +3,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Loja</title>
+    <title>Curiosidade</title>
     <link rel="stylesheet" href="/style/style.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+    <link rel="stylesheet" href="/style/curiosidades.css">
+    <style>
+        .container-1 {
+            flex: 1; /* Ocupa todo o espaço restante na altura */
+            overflow: auto; /* Adiciona barras de rolagem se o conteúdo não couber na viewport */
+        }
+
+        .curiosidades-content {
+            display: flex; /* Permite que as imagens fiquem lado a lado */
+            margin-top: 50px;
+        }
+
+        .major-champion {
+            margin-right: 20px; /* Espaçamento entre as imagens */
+        }
+
+        .major-champion img {
+            width: 650px; /* Defina a largura desejada */
+            height: 500px; /* Defina a altura desejada */
+        }
+        .team {
+            font-size: 50px;
+            text-align: center;
+        }
+
+        .campeoes{
+            font-size: 55px;
+            text-align: center;
+        }
+
+        
+    </style>
 </head>
 <body>
     <div class="container-1">
@@ -16,9 +48,26 @@
                     <li><a href="index.html">INICIO</a></li>
                     <li><a href="historia.html">HISTÓRIA</a></li>
                     <li><a href="videos.html">VIDEOS</a></li>
-                    <li><a href="/curiosidades.html">CURIOSIDADES</a></li>
+                    <li><a href="/curiosidades.html">MAJOR</a></li>
+                    <li><a href="/skins.html">SKINS</a></li>
                     <li><a href="login.html">LOGIN</a></li>
                 </ul>
             </nav>
+        </div>
+
+        <h1 class="campeoes">Maiores campeões Brasileiros!</h1>
+
+        <div class="curiosidades-content">
+            <div class="major-champion">
+                <h1 class="team">LUMINOSITY  - 2016</h1>
+                <img src="/images/luminosity.webp" alt="">
+            </div>
+            <div class="major-champion">
+                <h1 class="team">SK GAMING - 2017</h1>
+                <img src="/images/sk.webp" alt="">
+            </div>
+        </div>
+
+    </div>
 </body>
 </html>
