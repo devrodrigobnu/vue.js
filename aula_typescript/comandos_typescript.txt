@@ -1,0 +1,6 @@
+1) npm i -g typescript
+2) cria a pasta dist e src
+3) cria arquivo index.html na pasta dist
+4) coloca o comando script com a rota js/index.js no index.html
+5) cria arquivo index.ts na pasta src
+6) roda no terminal do vscode o comando npx tsc -init (versão)

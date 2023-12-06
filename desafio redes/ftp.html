@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FTP</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<style>
+  .bar {
+    height: 8px;
+    width: 30px;
+    cursor: pointer;
+    background-color: rgb(0, 0, 0);
+    opacity: .9;
+    border-radius: 10px;
+    transition: all .4s ease;
+    margin-left: 15px;
+}
+
+.bar:hover {
+    opacity: 0.8;
+    transform: scale(1.1);
+}
+
+input[name="r"] {
+    position: absolute;
+    visibility: hidden;
+}
+
+.slider {
+    width: 100%;
+    max-width: 1100px;
+    height: 600px;
+    overflow: hidden;
+    border: 10px solid #0c0707;
+    margin: 0 auto;
+}
+
+.middle {
+    position: relative;
+    margin-top: 50px;
+}
+
+.navigation {
+    position: absolute;
+    bottom: 16px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+}
+
+.slides {
+    width: 1200%; /* Adjusted width for 12 slides */
+    height: 100%;
+    display: flex;
+    transition: transform 0.6s ease;
+}
+
+.slide {
+    width: 8.3333%; /* Adjusted width for 12 slides */
+    transition: transform 0.6s ease;
+}
+
+.slide img {
+    width: 100%;
+    height: 100%;
+}
+
+/* Adjusted margin-left values for 12 slides */
+#r1:checked ~ .s1 { margin-left: 0; }
+#r2:checked ~ .s1 { margin-left: -8.3333%; }
+#r3:checked ~ .s1 { margin-left: -16.6667%; }
+#r4:checked ~ .s1 { margin-left: -25%; }
+#r5:checked ~ .s1 { margin-left: -33.3333%; }
+#r6:checked ~ .s1 { margin-left: -41.6667%; }
+#r7:checked ~ .s1 { margin-left: -50%; }
+#r8:checked ~ .s1 { margin-left: -58.3333%; }
+#r9:checked ~ .s1 { margin-left: -66.6667%; }
+#r10:checked ~ .s1 { margin-left: -75%; }
+#r11:checked ~ .s1 { margin-left: -83.3333%; }
+#r12:checked ~ .s1 { margin-left: -91.6667%; }
+
+</style>
+<body>
+
+  <!-- Inicio Header -->
+    <header>
+        <nav>
+            <ul>
+              <li>
+                  <h1>
+                     <img class="logo" src="/images/networking (1).png" alt=""> 
+                       Redes de Computadores
+                  </h1>
+              </li>
+              <li><a href="/index.html">Home</a></li>
+              <li><a href="#">Topologia</a></li>
+              <li class="dropdown">
+                <a href="javascript:void(0)">Protocolos</a>
+                <div class="dropdown-content">
+                    <a href="/tcp_ip.html">TCP/IP</a>
+                    <a href="/http.html">HTTP</a>
+                    <a href="/ftp.html">FTP</a>
+                    <a href="/smtp.html">SMTP</a>
+                    <a href="/pop3.html">POP3/IMAP</a>
+                </div>
+              </li>
+              <li><a href="/timeline.html">5G</a></li>
+            </ul>
+          </nav>
+    </header>
+    <!-- Fim Header -->
+
+    <!-- Inicio título -->
+    <h1 class="titulo-protocolo">PROTOCOLOS DE COMUNICAÇÃO</h1>
+    <!-- Fim título -->
+
+    <!-- Inicio Conteúdo -->
+      <section class="tcp-ip-h2">
+    <h2>FTP (File Transfer Protocol)</h2>
+    <div class="slider middle">
+        <div class="slides">
+            <input type="radio" name="r" id="r1" checked>
+            <input type="radio" name="r" id="r2">
+            <input type="radio" name="r" id="r3">
+            <input type="radio" name="r" id="r4">
+            <input type="radio" name="r" id="r5">
+            <input type="radio" name="r" id="r6">
+            <input type="radio" name="r" id="r7">
+            <input type="radio" name="r" id="r8">
+            <input type="radio" name="r" id="r9">
+            <input type="radio" name="r" id="r10">
+            <input type="radio" name="r" id="r11">
+            <input type="radio" name="r" id="r12">
+
+            <div class="slide s1"><img src="/images/ftp-1.png" alt=""></div>
+            <div class="slide"><img src="/images/ftp-2.png" alt=""></div>
+            <div class="slide"><img src="/images/ftp-3.png" alt=""></div>
+            <div class="slide"><img src="/images/ftp-4.png" alt=""></div>
+            <div class="slide"><img src="/images/ftp-5.png" alt=""></div>
+            <div class="slide"><img src="/images/ftp-6.png" alt=""></div>
+            <!-- Add more slides as needed -->
+            <div class="slide"><img src="/images/ftp-7.png" alt=""></div>
+            <div class="slide"><img src="/images/ftp-8.png" alt=""></div>
+            <div class="slide"><img src="/images/ftp-9.png" alt=""></div>
+            <div class="slide"><img src="/images/ftp-10.png" alt=""></div>
+            <div class="slide"><img src="/images/ftp-11.png" alt=""></div>
+            <div class="slide"><img src="/images/ftp-12.png" alt=""></div>
+        </div>
+        <div class="navigation">
+            <!-- Add labels for additional slides -->
+            <label for="r1" class="bar"></label>
+            <label for="r2" class="bar"></label>
+            <label for="r3" class="bar"></label>
+            <label for="r4" class="bar"></label>
+            <label for="r5" class="bar"></label>
+            <label for="r6" class="bar"></label>
+            <label for="r7" class="bar"></label>
+            <label for="r8" class="bar"></label>
+            <label for="r9" class="bar"></label>
+            <label for="r10" class="bar"></label>
+            <label for="r11" class="bar"></label>
+            <label for="r12" class="bar"></label>
+        </div>
+    </div>
+</section>
+
+    <!-- Fim conteúdo -->
+
+    <!-- Inicio Footer -->
+    <footer>
+      <p>&copy; 2023 - Todos os direitos reservados</p>
+    </footer>
+    <!-- Fim Footer -->
+</body>
+</html>

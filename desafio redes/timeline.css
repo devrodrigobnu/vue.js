@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Agbalumo&family=Comfortaa&family=Raleway:wght@300&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'raleway';
+}
+
+.main {
+    width: 100%;
+    height: auto;
+    background-color:  rgb(209, 209, 209);
+    padding: 50px 0;
+    display: grid;
+    place-items: center;
+}
+
+.main .heading {
+    font-size: 27px;
+    font-weight: 500;
+    color: #3c79c9;
+    position: relative;
+    margin-bottom: 80px;
+}
+
+.heading::after {
+    position: absolute;
+    content: ' ';
+    width: 50%;
+    height: 3px;
+    left: 50%;
+    bottom: -7px;
+    background-image: linear-gradient(to right, #3c79c9, #073570);
+    transform: translateX(-50%);
+}
+
+.container {
+    width: 70%;
+    height: auto;
+    position: relative;
+    z-index: 1;
+}
+
+.container::after {
+    position: absolute;
+    content: ' ';
+    width: 2px;
+    height: 100%;
+    background-image: linear-gradient(to bottom, #3c79c9, #073570);
+}
+
+.container ul {
+    list-style: none;
+}
+
+.container ul li {
+    width: 50%;
+    height: auto;
+    padding: 15px 20px;
+    background-color: #fff;
+    box-shadow: 1px 1px 25px rgba(0, 0, 0, 0.384);
+    border-radius: 10px;
+    margin-bottom: 30px;
+    z-index: 99;
+    position: relative;
+}
+
+.container ul li:nth-child(odd) {
+    float: left;
+    clear: right;
+    transform: translateX(-30px);
+    text-align: right;
+}
+
+.container ul li:nth-child(even) {
+    float: right;
+    clear: left;
+    transform: translateX(30px);
+}
+
+.container ul li :nth-child(6) {
+    margin-bottom: 0;
+}
+
+.container ul li .title {
+    font-size: 20px;
+    font-weight: 500;
+    color: #3c79c9;
+}
+
+.container ul li p {
+    font-size: 15px;
+    color: #444;
+    margin: 6px 0;
+    line-height: 16px;
+}
+
+.container ul li a {
+    font-size: 15px;
+    text-decoration: none;
+    color: rgb(94, 94, 224);
+}
+
+.container ul li .date {
+    position: absolute;
+    top: -40px;
+    width: 115px;
+    height: 35px;
+    border-radius: 20px;
+    color: #fff;
+    background-image: linear-gradient(to right, #3c79c3, #073570);
+    display: grid;
+    place-items: center;
+    font-size: 16px;
+}
+
+.container ul li:nth-child(odd) .date {
+    right: 20px;
+}
+
+.container ul li .circle {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #3c79c3c0;
+    position: absolute;
+    top: 0;
+}
+
+.container ul li .circle::after {
+    content: ' ';
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: #073570;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.container ul li:nth-child(odd) .circle{
+    right: -30px;
+    transform: translate(50%, -50%);
+}
+
+.container ul li:nth-child(even) .circle{
+    left: -30px;
+    transform: translate(-50%, -50%);
+}

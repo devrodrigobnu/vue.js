@@ -1,0 +1,5 @@
+CREATE DATABASE
+	*Exemplos: 
+	- CREATE DATABASE banco;
+	- CREATE DATABASE IF NOT EXISTS banco;
+

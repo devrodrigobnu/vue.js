@@ -1,0 +1,189 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    
+}
+
+body{
+    background-color: rgb(209, 209, 209);
+}
+
+.logo{
+    width: 50px;
+}
+
+/* Navegação */
+nav {
+    font-size: 100%;
+    padding: 2rem 1rem;
+}
+  
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.titulo-protocolo, .tcp-ip-h2, .imagem-tcp{
+  text-align: center;
+}
+
+.titulo-protocolo {
+  text-decoration: underline;
+}
+
+.http-ip-h2, .imagem-http{
+  text-align: center;
+}
+nav a {
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  display: block;
+  transition: color 0.3s; /* Adiciona uma transição suave para a mudança de cor */
+  text-decoration: bold;
+}
+
+nav a:hover {
+  color: blue; /* Muda a cor para vermelho quando o mouse está sobre o link */
+  font-weight: bold;
+}
+  
+/* Parte responsivo | Para desktop */
+@media (min-width: 800px) {
+nav {
+      max-width: 1200px;
+      margin: 0 auto;
+}
+nav li:first-child {
+      flex-basis: auto;
+      text-align: left;
+      margin-right: auto;
+}  
+}
+
+
+/*  */
+.foto {
+    width: 700px;
+    height: 350px;
+  }
+  
+  
+  #projetos h2 {
+    font-size: 2.5rem;
+    margin-bottom: calc(2.5rem * 1.5);
+  }
+  
+  #projetos h3 {
+    color: blue;
+  }
+  
+  #projetos h4 {
+    font-size: 1rem;
+    margin: 0;
+  }
+  
+  .section-projetos {
+    margin-top: 100px;
+    display: flex;
+  }
+  .blackbox {
+    padding: 1rem;
+    min-height: 40%;
+    min-width: 45%;
+    border-radius: 10px;
+    background-color: rgba(255, 0, 0, 0.5);
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+  
+  #projetos ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    gap: 1rem;
+    font-size: 1rem;
+  }
+  
+  #projetos img {
+    margin: 2rem 0 r4em 0;
+    padding: 10px;
+    border-left: 1px solid blue;
+    border-top: 1px solid blue;
+    border-radius: 25px;
+  }
+  
+  /* Projetos parte */
+  article {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+  }
+  #projetos {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  #projetos img {
+    grid-column: 1/6;
+    grid-row: 1/2;
+  }
+  .text {
+    grid-column: 5/11;
+    grid-row: 1/2;
+    order: 2;
+    text-align: right;
+  }
+  #projetos ul {
+    justify-content: flex-end;
+  }
+ 
+
+  footer {
+    background-color: rgb(209, 209, 209);
+    color: #000000;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    font-size: 15px;
+    padding: 0.1rem;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Outros estilos */
+.dropdown {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}

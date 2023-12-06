@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Topologia</title>
+    <link rel="stylesheet" href="topologia.css">
+</head>
+<style>
+  
+</style>
+<body>
+    <div class="wrapper">
+        <main>
+            <section class="module parallax parallax-1">
+            <h1>Topologia Anel</h1>
+          </section>
+          <section class="module content">
+            <div class="container">
+              <h2>Anel:</h2>
+              <p>
+                Os dispositivos são conectados em um formato de anel fechado.
+                A comunicação ocorre em uma direção única ao longo do anel.
+                Menos suscetível a colisões de dados, mas a falha em um dispositivo pode interromper a rede.
+              </p>
+              <p>
+                Vantagens:
+                Comunicação unidirecional reduz as colisões de dados.
+                Implementação relativamente simples em comparação com topologias mais complexas.
+                <br>
+                Desvantagens:
+                Falha em um dispositivo pode interromper toda a rede.
+                Dificuldade na adição ou remoção de dispositivos.
+              </p>        
+            </div>
+          </section>
+
+          <section class="module parallax parallax-2">
+            <h1>Topologia Barramento</h1>
+          </section>
+    
+          <section class="module content">
+            <div class="container">
+              <h2>Barramento:</h2>
+              <p>
+                Todos os dispositivos compartilham um único cabo (o barramento) para comunicação.
+                Simples, mas a adição de dispositivos pode afetar o desempenho.
+                Suscetível a colisões de dados, especialmente em redes mais ocupadas.
+              </p>
+              <p>
+                Vantagens:
+                Implementação simples e custo relativamente baixo.
+                Adequada para pequenas redes.
+                <br>
+                Desvantagens:
+                Suscetível a colisões, especialmente em redes congestionadas.
+                Limitada em termos de escalabilidade e desempenho à medida que a rede cresce.
+              </p>        
+            </div>
+          </section>
+          
+          <section class="module parallax parallax-3">
+            <h1>Topologia Estrela</h1>
+          </section>
+    
+          <section class="module content">
+            <div class="container">
+              <h2>Estrela:</h2>
+              <p>
+                Todos os dispositivos estão conectados a um ponto central, como um hub ou switch.
+                Facilita a detecção de falhas, pois se um dispositivo falhar, não afeta os outros.
+                Dependência do ponto central; se falhar, toda a rede pode ser impactada.
+              </p>
+               <p>
+                Vantagens:
+                Fácil detecção e isolamento de falhas, pois um problema em um dispositivo não afeta os outros.
+                Manutenção simplificada, pois é fácil adicionar ou remover dispositivos.
+                <br>
+                Desvantagens:
+                Dependência do ponto central (hub ou switch); se falhar, toda a rede pode ser impactada.
+                Custo mais elevado devido à necessidade de um ponto central robusto.
+                
+               </p>       
+            </div>
+          </section>
+
+          <section class="module parallax parallax-4">
+            <h1>Topologia Arvore</h1>
+          </section>
+    
+          <section class="module content">
+            <div class="container">
+              <h2>Árvore:</h2>
+              <p>
+                Uma combinação de topologias em estrela interconectadas, formando uma estrutura hierárquica.
+                Oferece um equilíbrio entre redundância e eficiência.
+                Mais complexa de configurar, mas pode ser escalável.
+              </p>
+              <p>
+                Vantagens:
+                Combina benefícios de topologias em estrela e barramento.
+                Hierarquia facilita a expansão e manutenção.
+                <br>
+                Desvantagens:
+                Requer mais planejamento e configuração inicial.
+                Ainda pode ser impactada se um nó central falhar.
+              </p>          
+            </div>
+          </section>
+    
+          <section class="module parallax parallax-5">
+            <h1>Topologia Malha</h1>
+          </section>
+    
+          <section class="module content">
+            <div class="container">
+              <h2>Malha:</h2>
+              <p>
+                Cada dispositivo está conectado a todos os outros, formando uma teia de conexões.
+                Oferece redundância e desempenho robusto.
+                Requer muitos cabos e pode ser caro de implementar.
+              </p>
+              <p>
+                Vantagens:
+                Redundância e tolerância a falhas significativas.
+                Desempenho robusto devido a várias rotas de comunicação.
+                <br>
+                Desvantagens:
+                Custo elevado devido à grande quantidade de cabos necessários.
+                Complexidade na configuração e manutenção.
+              </p>  
+            </div>
+          </section>
+    
+          <section class="module parallax parallax-6">
+            <h1>Topologia Hibrida</h1>
+          </section>
+    
+          <section class="module content">
+            <div class="container">
+              <h2>Híbrida:</h2>
+              <p>
+                Combina duas ou mais topologias para tirar proveito de seus pontos fortes.
+                Oferece flexibilidade e pode ser adaptada para atender às necessidades específicas de uma organização.
+              </p>
+              <p>
+                Vantagens:
+                Flexibilidade para atender a requisitos específicos.
+                Pode otimizar custos e desempenho.
+                <br>
+                Desvantagens:
+                Maior complexidade de design e configuração.
+                Manutenção pode ser mais desafiadora devido à diversidade de componentes.
+              </p>         
+            </div>
+          </section>
+    
+        </main>
+      </div>
+
+
+    <!-- rodapé -->
+    <footer>
+        <p>&copy; 2023 - Site Curso Entra21 - Vue.Js </p>
+    </footer>
+    
+</body>
+</html>
