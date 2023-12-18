@@ -1,0 +1,44 @@
+
+
+/* Os pseudo-elementos ::placeholder são usados 
+para estilizar o texto de espaço reservado (placeholder)
+em campos de entrada (input) e áreas de texto (textarea) 
+em formulários HTML. Aqui está um exemplo de como você
+pode estilizar o placeholder usando CSS: */
+
+#name::placeholder {
+    color: rgb(232, 7, 7);
+    background-color: rgb(199, 194, 194);
+}
+
+/* Como o placeholder se comporta em dois 
+estados diferentes */
+
+.input-1:placeholder-shown{
+    border: 5px solid green;
+    font-style: italic;
+}
+
+.input-1 {
+    border: 5px solid rgb(180, 15, 15);
+    color: rgb(0, 0, 0);
+}
+
+
+/* O pseudo-elemento ::marker é usado para estilizar o marcador 
+(geralmente um número ou um ponto) de uma lista ordenada (<ol>) 
+em HTML. Você pode personalizar a aparência do marcador, como sua 
+cor, estilo e tamanho, usando o ::marker. Aqui está um exemplo: */
+
+li::marker {
+
+    content: "\2022"; /* conteudo do marcador */
+    color: rgb(86, 14, 252);
+    font-size: 50px;
+}
+li {
+    font-size: 50px;
+}
+
+
+

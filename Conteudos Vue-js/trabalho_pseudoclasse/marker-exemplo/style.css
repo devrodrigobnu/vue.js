@@ -1,0 +1,8 @@
+ol li::marker {
+    content: "🧡 ";
+  }
+  
+  body {
+    line-height: 1.4;
+    font-family: system-ui;
+  }

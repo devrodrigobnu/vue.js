@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pseudoclasses</title>
+    <style>
+/* Estilo base do botão */
+/* 1 */
+.meu-botao {
+    background-color: #3498db;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+.meu-botao:hover {
+    background-color: #04141f;
+}
+.hover-link1:hover {
+    color: red;
+    text-decoration: underline;
+}
+/* -------------------- */
+
+/* 2 */
+.active-button:active {
+    background-color: green;
+    color: white;
+}
+/* ----------------- */
+
+/* 3 */
+.focus-input:focus {
+    background-color: rgb(125, 125, 223);
+}
+/* ------------- */
+
+/* 4 */
+/* (1)=> você seleciona o primeiro e assim por diante
+(n)=> você seleciona todos
+(odd)=> você seleciona elementos com base em suas posição */
+ li:nth-child(odd) {
+    background-color: rgb(200, 12, 12);
+}
+    </style>
+</head>
+<body>
+    <h1>Essas são apenas algumas das pseudoclasses mais comuns em CSS. Eles são usados ​​para aplicar estilos específicos a elementos com base em diferentes estados ou critérios de seleção, tornando a estilização de páginas da web mais dinâmica e interativa</h1>
+    <hr>
+    <h2>1):hover = Aplicado quando o mouse está sobre o elemento'botão'. Usado para criar efeitos como mudar a cor de um link quando o mouse passa sobre ele ou um botão </h2>
+    <button class="meu-botao">Passar o Mouse</button>
+    <a href="#" class="hover-link1">Passe o mouse aqui</a>
+    <br>
+    <hr>
+    <br>
+    <h2>2) :active = Aplicado quando o elemento está sendo clicado ou interagido de alguma forma. Muitas vezes usado para destacar botões ou links durante a interação do usuário.</h2>
+    <button class="active-button">Clique aqui</button>
+    <br>
+    <hr>
+    <br>
+    <h2>3):focus = Aplicado quando um elemento recebe um elemento foco, geralmente usado em campos de entrada de formulário para indicar que o campo está ativo e pronto para entrada
+    </h2>
+    <input type="text" class="focus-input" placeholder="Digite algo">
+    <br>
+    <hr>
+    <br>
+    <h2>4):nth-child(odd) = Permite selecionar elementos com base em sua posição dentro de um contêiner. Por exemplo, :nth-child(n)selecione todos os elementos impossíveis dentro de um contêiner</h2>
+    <ul>
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+    </ul>
+    
+</body>
+</html>

@@ -1,0 +1,13 @@
+Prova Lógica de Programação
+
+1.	Escreva um programa em Python que verifique se um número é positivo, negativo ou zero, depois valide se ele é par ou ímpar e exiba uma mensagem apropriada.
+2.	Faça um programa que calcule a soma dos números de 1 a 100 usando um loop while.
+3.	Escreva um programa que peça ao usuário para adivinhar um número secreto. Se o palpite estiver incorreto, dê dicas se o número secreto é maior ou menor. Continue pedindo palpites até que o usuário adivinhe corretamente.
+4.	Escreva um programa que determine se um ano é bissexto ou não. Um ano bissexto é divisível por 4, mas não por 100, a menos que também seja divisível por 400.
+5.	Peça ao usuário para inserir uma senha. Se a senha inserida for correta, exiba uma mensagem de boas-vindas; caso contrário, solicite que eles tentem novamente.
+6.	Escreva um programa que solicite ao usuário para digitar um número e, em seguida, imprima a tabuada desse número.
+7.	Crie um programa que solicite ao usuário uma sequência de números e calcule a média dos números digitados.
+8.	Escreva um programa que peça ao usuário para adivinhar uma palavra secreta. Se o palpite estiver incorreto, dê ao usuário um número limitado de tentativas e informe quantas tentativas restam.
+
+Formulário:
+https://forms.gle/ZuZDdC3hkYfNXoex8

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Continuação</title>
+    <style>
+/* 5 */
+.container p:first-child {
+    color: blue;
+    font-weight: bold;
+}
+
+.container p:last-child {
+    color: red;
+    font-style: italic;
+}
+
+/* ------------ */
+
+/* 6 */
+li:not(.special) {
+    color: pink;
+}
+/* -------------- */
+
+/* 7 */
+/* Estilizando as caixas de seleção quando estão marcadas */
+input[type="checkbox"]:checked + .custom-label {
+    color: green;
+    font-weight: bold;
+}
+
+/* Estilizando os botões de opção quando estão selecionados */
+input[type="radio"]:checked + .custom-label {
+    color: blue;
+    font-style: italic;
+}
+
+/* Estilizando labels de elementos desabilitados */
+input:disabled + .custom-label {
+    color: rgb(40, 165, 40);
+}
+
+
+/* ------------- */
+/* 8 */
+div p:nth-of-type(2) {
+    /* font-weight: bold; */
+    color: blue;
+}
+
+/* -------------- */
+/* 9 */
+#section1:target,
+#section2:target {
+    background: rgb(228,227,20);
+background: linear-gradient(0deg, rgba(228,227,20,1) 0%, rgba(142,143,117,1) 100%);
+}
+
+
+</style>
+</head>
+<body>
+    <h1>Continuação</h1>
+    <h2>5):first-childe :last-child = Selecionaram o primeiro e o último elemento filho de um elemento pai, respectivamente.</h2>
+    <div class="container">
+        <p>Primeiro parágrafo</p>
+        <p>Segundo parágrafo</p>
+        <p>Terceiro parágrafo</p>
+    </div>
+    <br><hr><br>
+    <h2>6):not(selector) = Permite selecionar elementos que não exigem um seletor específico. Por exemplo, :not(.special)selecione todos os elementos que não tenham a classe "especial".<h2>
+        <ul>
+            <li>Item 1</li>
+            <li class="special">ItemEspecial  </li>
+            <li>Item 2</li>
+        </ul>
+    <br><hr><br>
+    <h2>7):checkede :disabled = Usadas em elementos de entrada, como caixas de seleção e botões de rádio, para estilizar elementos com base em seu estado de seleção ou desabilitação.</h2>
+    <input type="checkbox" id="checkbox1">
+    <label for="checkbox1" class="custom-label">Caixa de Seleção</label>
+
+    <input type="radio" id="radio1" name="radioGroup">
+    <label for="radio1" class="custom-label">Opção 1</label>
+
+    <input type="radio" id="radio2" name="radioGroup">
+    <label for="radio2" class="custom-label">Opção 2</label>
+    <br>
+    <hr>
+    <br>
+    <h2>8):nth-of-type(n) = É semelhante a 
+        :nth-child, mas selecione elementos com base em sua posição dentro de um determinado tipo de elemento. Por exemplo, p:nth-of-type(2)selecione o segundo parágrafo em um contêiner.
+    </h2>
+    <div class="paragrafo">
+        <p>Primeiro parágrafo</p>
+        <p>Segundo parágrafo</p>
+        <p>Terceiro parágrafo</p>
+    </div>    
+    <br><hr><br>
+    <h2>9):target = Seleciona o elemento alvo da âncora em uma URL. É útil para criar links internos que destaquem o elemento relevante na página.</h2>
+    <nav>
+        <ul>
+            <li><a href="#section1">Seção 1</a></li>
+            <li><a href="#section2">Seção 2</a></li>
+        </ul>
+    </nav>
+    
+    <div id="section1">
+        <h2>Seção 1</h2>
+        <p>Conteúdo da Seção 1</p>
+    </div>
+    
+    <div id="section2">
+        <h2>Seção 2</h2>
+        <p>Conteúdo da Seção 2</p>
+    </div>    
+</body>
+</html>

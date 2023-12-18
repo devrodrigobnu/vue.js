@@ -1,0 +1,23 @@
+Bom dia a todos, sejam bem-vindos a nossa aula. 
+Hoje nós exploraremos conceitos e exemplo sobre pseudo-classe e 
+pseudo-elementos em css.
+Apresento a vocês o nosso time que é composto por mim Rodrigo Joel e ...
+Nossa aula será dividida em duas partes onde iremos explorar o conceito básico dos pseudos
+e também mostrar como usá-los na prática.
+
+
+
+
+1- Agora vamos dar uma olhada na estrutura basica 
+de HTML e CSS usando pseudo-elemento placeholder.
+Aqui eu criei um formulário simples onde nós temos um input para o usuario com id "name"
+o placeholder inicialmente é um texto temporário exibido dentro de um campo de input.
+Basicamente ele fornece uma instrução, que nesse caso é "insira seu nome".
+Quando o usuário começa a digitar, o texto do placeholder desaparece automaticamente.
+
+
+2 - pseudo-elemento marker ele é usado pra definir/estilizar conteudo de marcador.
+ou seja, esse marcador antes do "exemplo 1"
+Aqui eu estou manipulando o tipo, "content" , a cor e o tamanho
+tanto o tamanho do marcador como o tamanho da fonte de "exemplo 1"
+
