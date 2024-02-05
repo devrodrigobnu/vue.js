@@ -6,7 +6,7 @@
             <button @click="somar">Somar</button>
             <button @click="subtrair">Diminuir</button>
             <button @click="dividir">Dividir</button>
-            <button @click="multiplacar">Multiplacar</button>
+            <button @click="multiplacar">Multiplicar</button>
 
             <p>Resultado: {{ resultado }}</p>
       </div>
