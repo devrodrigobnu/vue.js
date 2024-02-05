@@ -5,6 +5,9 @@
             <input v-model="num2" type="number" placeholder="Digite o segundo número" />
             <button @click="somar">Somar</button>
             <button @click="subtrair">Diminuir</button>
+            <button @click="dividir">Dividir</button>
+            <button @click="multiplacar">Multiplacar</button>
+
             <p>Resultado: {{ resultado }}</p>
       </div>
 </template>
@@ -24,6 +27,12 @@ export default {
             },
             subtrair() {
                   this.resultado = Number(this.num1) - Number(this.num2);
+            },
+            dividir() {
+                  this.resultado = Number(this.num1) / Number(this.num2)
+            },
+            multiplacar() {
+                  this.resultado = Number(this.num1) * Number(this.num2)
             }
       }
 };
@@ -44,16 +53,6 @@ input {
       padding: 8px;
       margin-bottom: 10px;
       box-sizing: border-box;
-}
-
-button {
-      background-color: #4caf50;
-      color: white;
-      padding: 10px 15px;
-      font-size: 16px;
-      border: none;
-      border-radius: 4px;
-      cursor: pointer;
 }
 
 button:hover {
