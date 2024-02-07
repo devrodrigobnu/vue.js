@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resultados</title>
+    <link rel="stylesheet" href="resultado.css">
+    <script defer src="index.js"></script>
+    <script defer src="resultado.js"></script>
+</head>
+
+<body onload="atualizarLarguraSecoes()">
+
+    <div class="container-resultados">
+        <nav class="menu">
+            <button class="botao-menu" id="Votar" onclick="voltarVotar();">Votar</button>
+            <button class="botao-menu" onclick="obterVotacao(); atualizarLarguraSecoes();">Atualizar</button>
+            <button class="botao-menu" onclick="resetar()">Reiniciar</button>
+        </nav>
+
+        <div class="grid-votos" id="votos">
+
+            <div id="secao-dbz" class="anime-dbz">DBZ
+                <h2 id="por-dbz" class="por-dbz"></h2>
+            </div>
+
+            <div id="secao-naruto" class="anime-naruto">Naruto
+                <h2 id="por-naruto" class="por-naruto"></h2>
+            </div>
+        </div>
+
+        <div class="total-votos">
+            <h2 id="total-votos-texto"></h2>
+        </div>
+
+    </div>
+
+</body>
+
+</html>

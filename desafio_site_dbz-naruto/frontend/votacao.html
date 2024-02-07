@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Votação</title>
+    <link rel="stylesheet" href="votacao.css">
+    <script src="index.js"></script>
+</head>
+
+<body>
+    <div class="votacao-container">
+        <img class="imagem-votacao" src="/images/gn_votacao.jpeg" alt="">
+        <div class="caixa-branca">
+            <p class="pergunta">QUAL O SEU ANIME FAVORITO?</p>
+            <button class="botao-votar" onclick="votar('dbz'); verificarVotos();">DRAGON BALL Z</button>
+            <button class="botao-votar" onclick="votar('naruto'); verificarVotos();">NARUTO</button>
+            <button class="botao-votar" onclick="obterVotacao(), abrirResultados()">RESULT</button>
+        </div>
+    </div>
+</body>
+
+</html>

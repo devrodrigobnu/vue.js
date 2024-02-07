@@ -1,0 +1,103 @@
+html,
+body {
+    margin: 0;
+    height: 100%;
+    background: rgb(255, 69, 0);
+    background: linear-gradient(90deg, rgba(255, 69, 0, 1) 0%, rgba(121, 44, 9, 1) 35%, rgba(9, 245, 135, 1) 100%);
+
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.botao-menu {
+    width: 180px;
+    height: 60px;
+    background-color: #000;
+    color: orange;
+    border: none;
+    cursor: pointer;
+    border-bottom-left-radius: 60px;
+    border-bottom-right-radius: 60px;
+    text-align: center;
+    line-height: 40px;
+    font-size: 20px;
+}
+
+.botao-menu:hover {
+    background-color: orange;
+    color: #000;
+}
+
+.grid-votos {
+    display: grid;
+    grid-template-areas: 'dbz naruto';
+    grid-template-columns: 50% 50%;
+    gap: 0%;
+    font-size: 100%;
+    text-align: center;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+
+
+
+}
+
+.por-naruto {
+    font-display: center;
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 10px;
+    margin-top: 150px;
+}
+
+.por-dbz {
+    font-display: center;
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 10px;
+    margin-top: 150px;
+}
+
+.anime-naruto {
+    flex-grow: 1;
+    flex-basis: 200;
+    height: 100%;
+    background-color: rgb(9, 245, 135);
+    color: white;
+    grid-area: naruto;
+    margin: center;
+    text-align: center;
+    font-size: 90px;
+    padding: 0px;
+
+}
+
+.anime-dbz {
+    flex-grow: 1;
+    flex-basis: 200;
+    height: 100%;
+    background-color: orangered;
+    color: white;
+    grid-area: dbz;
+    margin: center;
+    text-align: center;
+    font-size: 90px;
+    padding: 0px;
+    
+
+}
+
+
+.total-votos {
+    display: flex;
+    justify-content: center;
+    font-size: 60px;
+    color: white;
+}
+

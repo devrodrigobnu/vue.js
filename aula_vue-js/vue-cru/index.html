@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste do Vue Cru</title>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script src="main.js" defer></script>
+</head>
+<style>
+    .box {
+        padding: 100px 0;
+        width: 200px;
+        text-align: center;
+        background-color: #ddd;
+        margin: 20px;
+        display: inline-block;
+    }
+
+    p,
+    h3,
+    ul {
+        margin: 0;
+        padding: 0;
+    }
+
+    li {
+        list-style-type: none;
+        background-color: #fff;
+        margin: 20px auto;
+        padding: 10px 20px;
+        border-radius: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .fav {
+        background-color: green;
+    }
+
+    .favorite span {
+        cursor: pointer;
+    }
+
+    .favorite span:hover {
+        opacity: 0.7;
+    }
+</style>
+
+<body>
+
+    <!-- Exemplo de trocar os nomes...  -->
+    <!-- <div id="app">
+        <h1>Livro : {{title}}</h1>
+        <h2>Autor: {{ author }}</h2>
+        <h3>Idade: {{age}}</h3>
+
+        <button v-on:click="age++">Aumentar idade</button>
+        <button v-on:click="age--">Diminuir idade</button>
+
+        <div @click="changeTitle('Harry Dev e o código filosofal')">Mudar o título do livro</div>
+
+    </div> -->
+    <div id="app">
+
+        <a v-bind:href="url">Clique aqui</a>
+
+        <!-- NESSE MODO A DIV SÓ EXISTE SE ESTA MOSTRANDO ELA... showbooks true -->
+        <div v-if="showBooks">
+            <p>{{title}} - {{author}} - {{age}}</p>
+
+            <!-- COMO FAZER OS CARDS DOS VINHOS!!!! -->
+            <ul>
+                <li v-for="(book, index) in books" :class="{fav: book.isFav}">
+                    <h3>{{book.title}}</h3>
+                    <p>{{book.author}}</p>
+                    <img :src="book.img" alt="book.title" width="100px">
+                    <div class="favorite" @click="toggleFavorite(index)">
+                        <span v-if="book.isFav">😎</span>
+                        <span v-else>😢</span>
+                    </div>
+                </li>
+            </ul>
+
+        </div>
+        <button @click="showBooks = !showBooks">
+            <span v-if="showBooks">Esconder Livros</span>
+            <span v-else> Mostrar Livros</span>
+        </button>
+        <button @click="showBooksHandler">Mostrar Livros2</button>
+
+        <!-- NESSE MODO A DIV EXISTE E NAO MOSTRA APENAS... -->
+        <div v-show="showBooks">Mostrando livros</div>
+        <br><br><br>
+
+        <div class="box" @mouseover="handlerEvent">mouseover(enter)</div>
+        <div class="box" @mouseleave="handlerEvent">mouseleave</div>
+        <div class="box" @dblclick="handlerEvent">double click</div>
+        <div class="box" @mouseover="handlerEvent2">a</div>
+        <div class="box">a</div>
+
+
+        <div class="calculadora">
+            <input type="number" v-model="number1">
+            <input type="number" v-model="number2">
+            <button id="somar" @click="somar">+</button>
+            <button id="subtrair" @click="subtrair">-</button>
+            <button id="multiplicar" @click="multiplicar">*</button>
+            <button id="dividir" @click="dividir">/</button>
+            <h1>Resultado: {{result}}</h1>
+
+        </div>
+
+        <div v-if="!isLoggedIn">
+            <h2>Login</h2>
+            <input type="text" v-model="username" placeholder="Username">
+            <input type="password" v-model="password" placeholder="Password">
+            <button @click="login">Login</button>
+            <p v-if="loginError" class="error">{{ loginError }}</p>
+        </div>
+        <div v-else>
+            <h2>Seja bem vindo, {{ username }}</h2>
+            <button @click="logout">Logout</button>
+        </div>
+
+
+    </div>
+
+</body>
+
+</html>
