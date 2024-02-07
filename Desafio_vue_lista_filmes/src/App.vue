@@ -1,17 +1,13 @@
 <template>
-  <!-- Define a estrutura HTML do componente -->
   <div id="app">
     <header>
-      <!-- Cabeçalho do aplicativo -->
       <h1>Olá</h1>
     </header>
-    <!-- Título principal do aplicativo -->
+
     <h1 id="titulo">Clique para Listar os filmes! ✌️</h1>
     <div class="btn-container">
-      <!-- Botão que ao ser clicado chama o método exibirListarFilmes -->
       <button @click="exibirListarFilmes">Listar Filmes</button>
     </div>
-    <!-- Componente ListarFilmes, só é renderizado se exibirFilmes for verdadeiro -->
     <ListarFilmes v-if="exibirFilmes" />
   </div>
 </template>
@@ -52,7 +48,7 @@ body,
   height: 100vh;
 }
 
-/* Estilos para o título principal */
+/* Estilos para o título principal */ 
 #titulo {
   font-size: 24px;
   text-align: center;
