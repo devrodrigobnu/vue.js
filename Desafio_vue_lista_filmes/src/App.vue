@@ -6,7 +6,7 @@
 
     <h1 id="titulo">Clique para Listar os filmes! ✌️</h1>
     <div class="btn-container">
-      <button @click="exibirListarFilmes">Listar Filmes</button>
+      <button class="btn-listar-filmes" @click="exibirListarFilmes">Listar Filmes</button>
     </div>
     <ListarFilmes v-if="exibirFilmes" />
   </div>
@@ -65,8 +65,23 @@ body,
   margin-right: 10px;
 }
 
-/* Estilos para um botão específico (não utilizado no exemplo fornecido) */
-.botao-cadastrar {
-  margin-top: 15px;
+
+.btn-listar-filmes{
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 8px;
+  transition-duration: 0.4s;
+}
+
+.btn-listar-filmes:hover {
+    background-color: #45a049
 }
 </style>
